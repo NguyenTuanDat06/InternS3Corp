@@ -1,0 +1,14 @@
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\bin\Debug\net6.0\DemoTemplateMethod.exe
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\bin\Debug\net6.0\DemoTemplateMethod.deps.json
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\bin\Debug\net6.0\DemoTemplateMethod.runtimeconfig.json
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\bin\Debug\net6.0\DemoTemplateMethod.dll
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\bin\Debug\net6.0\DemoTemplateMethod.pdb
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\DemoTemplateMethod.GeneratedMSBuildEditorConfig.editorconfig
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\DemoTemplateMethod.AssemblyInfoInputs.cache
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\DemoTemplateMethod.AssemblyInfo.cs
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\DemoTemplateMethod.csproj.CoreCompileInputs.cache
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\DemoTemplateMethod.dll
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\refint\DemoTemplateMethod.dll
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\DemoTemplateMethod.pdb
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\DemoTemplateMethod.genruntimeconfig.cache
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTemplateMethod\obj\Debug\net6.0\ref\DemoTemplateMethod.dll

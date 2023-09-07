@@ -1,0 +1,14 @@
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\bin\Debug\net6.0\DemoTopic2.exe
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\bin\Debug\net6.0\DemoTopic2.deps.json
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\bin\Debug\net6.0\DemoTopic2.runtimeconfig.json
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\bin\Debug\net6.0\DemoTopic2.dll
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\bin\Debug\net6.0\DemoTopic2.pdb
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\DemoTopic2.GeneratedMSBuildEditorConfig.editorconfig
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\DemoTopic2.AssemblyInfoInputs.cache
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\DemoTopic2.AssemblyInfo.cs
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\DemoTopic2.csproj.CoreCompileInputs.cache
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\DemoTopic2.dll
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\refint\DemoTopic2.dll
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\DemoTopic2.pdb
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\DemoTopic2.genruntimeconfig.cache
+D:\InternS3Corp\Day 2 - Design patterns\DemoTopic2\DemoTopic2\obj\Debug\net6.0\ref\DemoTopic2.dll
