@@ -1,5 +1,7 @@
 ﻿using DemoRepository.DAL;
+using DemoRepository.GenericRepository;
 using DemoRepository.Repository;
+using DemoRepository.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +12,19 @@ namespace DemoRepository.Controllers
 {
     public class EmployeeController : Controller
     {
-        private IEmployeeRepository _employeeRepository;
+        private UnitOfWork<EmployeeDBContext> unitOfWork = new UnitOfWork<EmployeeDBContext>();
+        private GenericRepository<Employee> genericRepository;
+        private IEmployeeRepository employeeRepository;
         public EmployeeController()
         {
-            _employeeRepository = new EmployeeRepository(new EmployeeDBContext());
+            employeeRepository = new EmployeeRepository(unitOfWork);
+            genericRepository = new GenericRepository<Employee>(unitOfWork);
         }
+        
         [HttpGet]
         public ActionResult Index()
         {
-            var model = _employeeRepository.GetAll();
+            var model = genericRepository.GetAll();
             return View(model);
         }
         [HttpGet]
@@ -29,18 +35,27 @@ namespace DemoRepository.Controllers
         [HttpPost]
         public ActionResult AddEmployee(Employee model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _employeeRepository.Insert(model);
-                _employeeRepository.Save();
-                return RedirectToAction("Index", "Employee");
+                unitOfWork.CreateTransaction();
+                if (ModelState.IsValid)
+                {
+                    genericRepository.Insert(model);
+                    unitOfWork.Save();
+                    unitOfWork.Commit();
+                    return RedirectToAction("Index", "Employee");
+                }
+            }
+            catch (Exception ex)
+            {
+                unitOfWork.Rollback();
             }
             return View();
         }
         [HttpGet]
         public ActionResult EditEmployee(int EmployeeId)
         {
-            Employee model = _employeeRepository.GetById(EmployeeId);
+            Employee model = genericRepository.GetById(EmployeeId);
             return View(model);
         }
         [HttpPost]
@@ -48,8 +63,8 @@ namespace DemoRepository.Controllers
         {
             if (ModelState.IsValid)
             {
-                _employeeRepository.Update(model);
-                _employeeRepository.Save();
+                genericRepository.Update(model);
+                unitOfWork.Save();
                 return RedirectToAction("Index", "Employee");
             }
             else
@@ -60,14 +75,15 @@ namespace DemoRepository.Controllers
         [HttpGet]
         public ActionResult DeleteEmployee(int EmployeeId)
         {
-            Employee model = _employeeRepository.GetById(EmployeeId);
+            Employee model = genericRepository.GetById(EmployeeId);
             return View(model);
         }
         [HttpPost]
         public ActionResult Delete(int EmployeeID)
         {
-            _employeeRepository.Delete(EmployeeID);
-            _employeeRepository.Save();
+            Employee model = genericRepository.GetById(EmployeeID);
+            genericRepository.Delete(model);
+            unitOfWork.Save();
             return RedirectToAction("Index", "Employee");
         }
     }

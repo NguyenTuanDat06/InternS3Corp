@@ -1,53 +1,121 @@
 ﻿using DemoRepository.DAL;
+using DemoRepository.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Web;
 
 namespace DemoRepository.GenericRepository
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T>, IDisposable where T : class
     {
-        private EmployeeDBContext _context = null;
-        private DbSet<T> table = null;
-        public GenericRepository()
+        private IDbSet<T> _entities;
+        private string _errorMessage = string.Empty;
+        private bool _isDisposed;
+        public GenericRepository(IUnitOfWork<EmployeeDBContext> unitOfWork)
+            : this(unitOfWork.Context)
         {
-            this._context = new EmployeeDBContext();
+        }
+        public GenericRepository(EmployeeDBContext context)
+        {
+            _isDisposed = false;
+            Context = context;
+        }
+        public EmployeeDBContext Context { get; set; }
 
-            table = _context.Set<T>();
+        protected virtual IDbSet<T> Entities
+        {
+            get { return _entities ?? (_entities = Context.Set<T>()); }
+        }
+        public void Dispose()
+        {
+            if (Context != null)
+                Context.Dispose();
+            _isDisposed = true;
+        }
+        public virtual IEnumerable<T> GetAll()
+        {
+            return Entities.ToList();
+        }
+        public virtual T GetById(object id)
+        {
+            return Entities.Find(id);
+        }
+        public virtual void Insert(T entity)
+        {
+            try
+            {
+                if (entity == null)
+                {
+                    throw new ArgumentNullException("Entity");
+                }
+
+                if (Context == null || _isDisposed)
+                {
+                    Context = new EmployeeDBContext();
+                }
+                Entities.Add(entity);
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                HandleUnitOfWorkException(dbEx);
+                throw new Exception(_errorMessage, dbEx);
+            }
         }
 
-        public GenericRepository(EmployeeDBContext _context)
+        public virtual void Update(T entity)
         {
-            this._context = _context;
-            table = _context.Set<T>();
+            try
+            {
+                if (entity == null)
+                {
+                    throw new ArgumentNullException("Entity");
+                }
+
+                if (Context == null || _isDisposed)
+                {
+                    Context = new EmployeeDBContext();
+                }
+                Context.Entry(entity).State = EntityState.Modified;
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                HandleUnitOfWorkException(dbEx);
+                throw new Exception(_errorMessage, dbEx);
+            }
         }
-        public IEnumerable<T> GetAll()
+        public virtual void Delete(T entity)
         {
-            return table.ToList();
+            try
+            {
+                if (entity == null)
+                {
+                    throw new ArgumentNullException("Entity");
+                }
+                if (Context == null || _isDisposed)
+                {
+                    Context = new EmployeeDBContext();
+                }
+
+                Entities.Remove(entity);
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                HandleUnitOfWorkException(dbEx);
+                throw new Exception(_errorMessage, dbEx);
+            }
         }
-        public T GetById(object id)
+        private void HandleUnitOfWorkException(DbEntityValidationException dbEx)
         {
-            return table.Find(id);
-        }
-        public void Insert(T obj)
-        {
-            table.Add(obj);
-        }
-        public void Update(T obj)
-        {
-            table.Attach(obj);
-            _context.Entry(obj).State = EntityState.Modified;
-        }
-        public void Delete(object id)
-        {
-            T existing = table.Find(id);
-            table.Remove(existing);
-        }
-        public void Save()
-        {
-            _context.SaveChanges();
+            foreach (var validationErrors in dbEx.EntityValidationErrors)
+            {
+                foreach (var validationError in validationErrors.ValidationErrors)
+                {
+                    _errorMessage = _errorMessage + $"Property: {validationError.PropertyName} Error: {validationError.ErrorMessage} {Environment.NewLine}";
+                }
+            }
         }
     }
 }

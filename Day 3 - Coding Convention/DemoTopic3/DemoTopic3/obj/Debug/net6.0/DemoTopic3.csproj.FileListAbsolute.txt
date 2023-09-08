@@ -1,0 +1,14 @@
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\bin\Debug\net6.0\DemoTopic3.exe
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\bin\Debug\net6.0\DemoTopic3.deps.json
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\bin\Debug\net6.0\DemoTopic3.runtimeconfig.json
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\bin\Debug\net6.0\DemoTopic3.dll
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\bin\Debug\net6.0\DemoTopic3.pdb
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\DemoTopic3.GeneratedMSBuildEditorConfig.editorconfig
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\DemoTopic3.AssemblyInfoInputs.cache
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\DemoTopic3.AssemblyInfo.cs
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\DemoTopic3.csproj.CoreCompileInputs.cache
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\DemoTopic3.dll
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\refint\DemoTopic3.dll
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\DemoTopic3.pdb
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\DemoTopic3.genruntimeconfig.cache
+D:\InternS3Corp\Day 3 - Coding Convention\DemoTopic3\DemoTopic3\obj\Debug\net6.0\ref\DemoTopic3.dll
