@@ -1,0 +1,20 @@
+﻿@model List<DemoDBFirst.Models.Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.categoryID</td>
+                    <td>@item.categoryName</td>
+                </tr>
+            }
+</table>
