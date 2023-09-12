@@ -1,0 +1,14 @@
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\bin\Debug\net6.0\DemoTopic5.exe
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\bin\Debug\net6.0\DemoTopic5.deps.json
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\bin\Debug\net6.0\DemoTopic5.runtimeconfig.json
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\bin\Debug\net6.0\DemoTopic5.dll
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\bin\Debug\net6.0\DemoTopic5.pdb
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\DemoTopic5.GeneratedMSBuildEditorConfig.editorconfig
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\DemoTopic5.AssemblyInfoInputs.cache
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\DemoTopic5.AssemblyInfo.cs
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\DemoTopic5.csproj.CoreCompileInputs.cache
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\DemoTopic5.dll
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\refint\DemoTopic5.dll
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\DemoTopic5.pdb
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\DemoTopic5.genruntimeconfig.cache
+D:\InternS3Corp\Day 5 - C# Reflection\DemoTopic5\DemoTopic5\obj\Debug\net6.0\ref\DemoTopic5.dll
