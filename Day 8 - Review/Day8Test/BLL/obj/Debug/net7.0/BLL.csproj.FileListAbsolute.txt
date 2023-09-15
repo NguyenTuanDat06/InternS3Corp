@@ -1,0 +1,17 @@
+D:\test\Day8Test\BLL\bin\Debug\net7.0\BLL.deps.json
+D:\test\Day8Test\BLL\bin\Debug\net7.0\BLL.runtimeconfig.json
+D:\test\Day8Test\BLL\bin\Debug\net7.0\BLL.dll
+D:\test\Day8Test\BLL\bin\Debug\net7.0\BLL.pdb
+D:\test\Day8Test\BLL\bin\Debug\net7.0\DAL.dll
+D:\test\Day8Test\BLL\bin\Debug\net7.0\DAL.pdb
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.dll
+D:\test\Day8Test\BLL\obj\Debug\net7.0\refint\BLL.dll
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.pdb
+D:\test\Day8Test\BLL\obj\Debug\net7.0\BLL.genruntimeconfig.cache
+D:\test\Day8Test\BLL\obj\Debug\net7.0\ref\BLL.dll
