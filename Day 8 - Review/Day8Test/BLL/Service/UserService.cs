@@ -1,23 +1,31 @@
 ﻿using BLL.IService;
 using BLL.Models.DTOs;
-using BLL.Models.Requests;
-using DAL.Entities;
 using DAL.Repository;
 
 namespace BLL.Service
 {
     public class UserService : IUserService
     {
-        private readonly IRepository<User> _userService;
-        
-        public UserService(IRepository<User> userService)
+        private readonly IUserRepository _userRepo;
+
+        public UserService(IUserRepository userRepo)
         {
-            _userService = userService;
+            _userRepo = userRepo;
         }
-        public List<CreateUserRequest> ListOfUser()
+
+        public List<DtoUser> ListOfUser()
         {
-            List<CreateUserRequest> req = new List<CreateUserRequest>();
-            //req = _userService.GetAll();
+            var req = new List<DtoUser>();
+            var dbUsers = _userRepo.GetAll();
+            foreach (var dbUser in dbUsers)
+            {
+                req.Add(new DtoUser
+                {
+                    Name = dbUser.Name,
+                    Phone = dbUser.phone,
+                    Address = dbUser.address
+                });
+            }
             return req;
         }
     }

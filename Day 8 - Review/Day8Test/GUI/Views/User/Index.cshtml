@@ -1,5 +1,6 @@
-﻿@model IEnumerable<BLL.Models.Requests.CreateUserRequest>  
+﻿@model IEnumerable<DtoUser>  
 @using BLL
+@using BLL.Models.DTOs;
 @using GUI.Controllers
 
 
@@ -21,15 +22,15 @@
                     <th>Address</th>
                 </tr>
             </thead>
-            @* <tbody>
-                @foreach (var item in Model)
+            <tbody>
+                 @foreach (var item in Model)
                 {
                     <tr>
                         <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                        <td>@Html.DisplayFor(modelItem => item.phone)</td>
-                        <td>@Html.DisplayFor(modelItem => item.address)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Phone)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Address)</td>
                         <td>
-                            <a id="editUserModal" data-toggle="modal" asp-action="GetUser" asp-route-id="@item.Id" data-target="#modal-action-user"
+@*                             <a id="editUserModal" data-toggle="modal" asp-action="GetUser" asp-route-id="@item.Id" data-target="#modal-action-user"
                                class="btn btn-info">
                                 <i class="glyphicon glyphicon-pencil"></i>  Edit
                             </a>
@@ -39,11 +40,11 @@
                             </a>
                             <a id="deleteUserModal" data-toggle="modal" asp-action="DeleteUser" asp-route-id="@item.Id" data-target="#modal-action-user" class="btn btn-danger">
                                 <i class="glyphicon glyphicon-trash"></i>  Delete
-                            </a>
+                            </a> *@
                         </td>
                     </tr>
                 }
-            </tbody> *@
+            </tbody>
         </table>
     </div>
 </div>

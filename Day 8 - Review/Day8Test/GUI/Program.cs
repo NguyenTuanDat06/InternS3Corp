@@ -11,6 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 builder.Services.AddTransient<IUserService,UserService>();
 var app = builder.Build();
 

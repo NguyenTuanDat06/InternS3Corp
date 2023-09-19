@@ -3136,11 +3136,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\test\\Day8Test\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\test\\Day8Test\\DAL\\DAL.csproj",
+      "projectPath": "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\dat.nguyent\\.nuget\\packages\\",
-      "outputPath": "D:\\test\\Day8Test\\DAL\\obj\\",
+      "outputPath": "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dat.nguyent\\AppData\\Roaming\\NuGet\\NuGet.Config",

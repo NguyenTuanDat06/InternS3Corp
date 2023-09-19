@@ -3408,11 +3408,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\test\\Day8Test\\GUI\\GUI.csproj",
+      "projectUniqueName": "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\GUI\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "D:\\test\\Day8Test\\GUI\\GUI.csproj",
+      "projectPath": "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\GUI\\GUI.csproj",
       "packagesPath": "C:\\Users\\dat.nguyent\\.nuget\\packages\\",
-      "outputPath": "D:\\test\\Day8Test\\GUI\\obj\\",
+      "outputPath": "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\GUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dat.nguyent\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3429,8 +3429,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\test\\Day8Test\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\test\\Day8Test\\BLL\\BLL.csproj"
+            "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\InternS3Corp\\Day 8 - Review\\Day8Test\\BLL\\BLL.csproj"
             }
           }
         }
