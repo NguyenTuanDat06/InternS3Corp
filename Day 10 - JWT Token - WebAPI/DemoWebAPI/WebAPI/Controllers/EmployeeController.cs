@@ -1,13 +1,14 @@
 ﻿using BLL.IService;
 using BLL.Models.DTOs;
 using BLL.Models.Requests;
-using DAL.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
+
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
@@ -17,14 +18,15 @@ namespace WebAPI.Controllers
             _employeeService = employeeService;
         }
 
-        [HttpGet("/ListEmployee")]
+        [HttpGet("ListEmployee")]
+        [Authorize]
         public IEnumerable<EmployeeDto> GetListEmployee()
         {
             List<EmployeeDto> result = _employeeService.ListOfEmployee();
             return result;
         }
 
-        [HttpGet("/Employee/{id}")]
+        [HttpGet("GetEmployee/{id}")]
         public ActionResult<EmployeeDto> GetEmployeeById(int id)
         {
 
@@ -36,7 +38,7 @@ namespace WebAPI.Controllers
             return _employeeService.GetEmployeeId(id);
         }
 
-        [HttpPost("/AddEmployee")]
+        [HttpPost("AddEmployee")]
         public ActionResult AddEmployee(EmployeeRequests employeeDto)
         {
             _employeeService.InsertEmployee(employeeDto);

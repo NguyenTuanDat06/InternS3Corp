@@ -80,3 +80,10 @@ D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\B
 D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\DAL.dll
 D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\BLL.pdb
 D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\DAL.pdb
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
