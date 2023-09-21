@@ -136,9 +136,9 @@ namespace BLL.Service
             var authenKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
 
             var tokenDes = new JwtSecurityToken(
-                               issuer: _configuration["JWT : ValidIssuer"],
-                               audience: _configuration["JWT : ValidAudience"],
-                               expires: DateTime.Now.AddMinutes(20),
+                               issuer: _configuration["JWT:Issuer"],
+                               audience: _configuration["JWT:Audience"],
+                               expires: DateTime.Now.AddMinutes(30),
                                claims: claims,
                                signingCredentials: new SigningCredentials(authenKey, SecurityAlgorithms.HmacSha512Signature)
                            );

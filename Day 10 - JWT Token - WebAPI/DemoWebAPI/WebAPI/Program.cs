@@ -40,15 +40,16 @@ builder.Services.AddAuthentication(options =>
         {
             ValidateIssuer = true,
             ValidateAudience = true,
-            ValidAudience = builder.Configuration["JWT : ValidAudience"],
-            ValidIssuer = builder.Configuration["JWT : ValidIssuer"],
+            ValidAudience = builder.Configuration["JWT:Audience"],
+            ValidIssuer = builder.Configuration["JWT:Issuer"],
+            ClockSkew = TimeSpan.Zero,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
         };
     });
 
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped<IAccountService,AccountService>();
+builder.Services.AddTransient<IAccountService,AccountService>();
 builder.Services.AddTransient<IEmployeeService, EmployeeService>();
 
 var app = builder.Build();
