@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ih9YgrJQmpXL1gGWs2bCcOtUnqD+wkoy9nxMD+zr/iU=",
+  "Source": "APIGate",
+  "BasePath": "_content/APIGate",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

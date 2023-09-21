@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cxi+Q+Sa9NaqEo3fkKuMp8Eq234gpkgFmaRVMFNpfBQ2Kj1IfwgzLWgL6gOaK3ttfPKzP92rd0X6tULJJv+eyg==",
+  "success": true,
+  "projectFilePath": "D:\\InternS3Corp\\Day 10 - JWT Token - WebAPI\\DemoWebAPI\\WebAPITest\\WebAPITest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

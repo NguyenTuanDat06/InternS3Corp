@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y+J7JkWtNIJwsG/sLhkhtRb0/lz7R1Yn2DKGD2YN1HtII//YLpFHaq5x+aEmRL5OkNLAQqUK+6EoezhbB97Mxw==",
+  "dgSpecHash": "8fSx+GHqx5fQggh0wLpmUcKHXo1sPp2Ftqu6OECklf0eeRL11QvGUiAbejLUS59qyeC7zki5uYue0/XyFIOCnA==",
   "success": true,
   "projectFilePath": "D:\\InternS3Corp\\Day 10 - JWT Token - WebAPI\\DemoWebAPI\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,7 @@
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",

@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Employee/ListEmployee",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7214
+        }
+      ],
+      "UpstreamPathTemplate": "/ListEmployee",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ]
+
+}

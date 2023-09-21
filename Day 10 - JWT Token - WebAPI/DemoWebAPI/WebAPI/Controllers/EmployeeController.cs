@@ -12,10 +12,21 @@ namespace WebAPI.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
+        private readonly HttpClient _httpClient;
 
-        public EmployeeController(IEmployeeService employeeService)
+        public EmployeeController(IEmployeeService employeeService, HttpClient httpClient)
         {
             _employeeService = employeeService;
+            _httpClient = httpClient;
+        }
+
+        [HttpGet("TestCustomer")]
+        public async Task<string> GetListCustomer()
+        {
+            string url = "https://localhost:7024/api/Customer/CustomerList";
+            var response = await _httpClient.GetAsync(url);
+            var content = await response.Content.ReadAsStringAsync();
+            return content;
         }
 
         [HttpGet("ListEmployee")]

@@ -51,7 +51,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddTransient<IAccountService,AccountService>();
 builder.Services.AddTransient<IEmployeeService, EmployeeService>();
-
+builder.Services.AddHttpClient();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
