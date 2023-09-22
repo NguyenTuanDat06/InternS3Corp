@@ -12,5 +12,16 @@ namespace WebAPITest.Controllers
             var customerList = new List<string> { "customer1", "customer2" ,"customer3" };
             return customerList;
         }
+
+        [HttpPost("AddCustomer")]
+        public ActionResult AddCustomer(string a)
+        {
+            var customerList = new List<string>();
+
+                customerList.Add(a);
+
+            return Ok(customerList);
+
+        }
     }
 }

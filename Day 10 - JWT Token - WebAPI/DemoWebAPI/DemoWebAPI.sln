@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{574AB5FD-73F6-4CD9-9C3A-322418CADB32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGate", "APIGate\APIGate.csproj", "{EE595F09-A221-4324-9732-F32AF274ABE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGate", "APIGate\APIGate.csproj", "{EE595F09-A221-4324-9732-F32AF274ABE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPITest", "WebAPITest\WebAPITest.csproj", "{CECD0DA7-79F2-4ABF-86FA-A9C804E53169}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPITest", "WebAPITest\WebAPITest.csproj", "{CECD0DA7-79F2-4ABF-86FA-A9C804E53169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{34BF33F2-93C8-4052-815A-CB69A1261C64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CECD0DA7-79F2-4ABF-86FA-A9C804E53169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CECD0DA7-79F2-4ABF-86FA-A9C804E53169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CECD0DA7-79F2-4ABF-86FA-A9C804E53169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BF33F2-93C8-4052-815A-CB69A1261C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BF33F2-93C8-4052-815A-CB69A1261C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BF33F2-93C8-4052-815A-CB69A1261C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BF33F2-93C8-4052-815A-CB69A1261C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

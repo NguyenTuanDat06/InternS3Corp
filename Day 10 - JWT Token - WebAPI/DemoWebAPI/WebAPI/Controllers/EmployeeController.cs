@@ -13,11 +13,15 @@ namespace WebAPI.Controllers
     {
         private readonly IEmployeeService _employeeService;
         private readonly HttpClient _httpClient;
+        private readonly ILogger<EmployeeController> _logger;
 
-        public EmployeeController(IEmployeeService employeeService, HttpClient httpClient)
+
+        public EmployeeController(IEmployeeService employeeService, HttpClient httpClient, ILogger<EmployeeController> logger)
         {
             _employeeService = employeeService;
             _httpClient = httpClient;
+            _logger = logger;
+            _logger.LogDebug("Nlog in employeeController");
         }
 
         [HttpGet("TestCustomer")]
@@ -33,6 +37,7 @@ namespace WebAPI.Controllers
         [Authorize]
         public IEnumerable<EmployeeDto> GetListEmployee()
         {
+            _logger.LogInformation("abc");
             List<EmployeeDto> result = _employeeService.ListOfEmployee();
             return result;
         }

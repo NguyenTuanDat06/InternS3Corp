@@ -87,3 +87,7 @@ D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\M
 D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\nlog.config
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\NLog.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\NLog.Extensions.Logging.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\WebAPI\bin\Debug\net7.0\NLog.Web.AspNetCore.dll
