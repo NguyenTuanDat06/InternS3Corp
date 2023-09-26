@@ -15,7 +15,7 @@ namespace WebAPI.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger<EmployeeController> _logger;
 
-
+        string localhost = "https://localhost:7024/api/";
         public EmployeeController(IEmployeeService employeeService, HttpClient httpClient, ILogger<EmployeeController> logger)
         {
             _employeeService = employeeService;
@@ -27,7 +27,7 @@ namespace WebAPI.Controllers
         [HttpGet("TestCustomer")]
         public async Task<string> GetListCustomer()
         {
-            string url = "https://localhost:7024/api/Customer/CustomerList";
+            string url = localhost+"Customer/CustomerList";
             var response = await _httpClient.GetAsync(url);
             var content = await response.Content.ReadAsStringAsync();
             return content;

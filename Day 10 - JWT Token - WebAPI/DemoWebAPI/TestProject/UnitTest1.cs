@@ -20,6 +20,12 @@ namespace TestProject
             Assert.AreEqual(result, list);
 
         }
+        [TestMethod]
+        public void AddTest()
+        {
+            var res =(1+ 2);
+            Assert.AreEqual(3 , res);
+        }
 
         private static IEnumerable<object[]> createSource
         {

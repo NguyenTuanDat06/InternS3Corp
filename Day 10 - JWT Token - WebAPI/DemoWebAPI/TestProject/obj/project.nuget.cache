@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IFUb9ak4x+87TMaNlwScBynFGQuAirobJawol7xerq/0RMcukkcFcC9hlT7pQE37PLVBsONvstKZf6FfOvZ0Ug==",
+  "dgSpecHash": "V3QUdeUo4B3UBWM+jaOCbEK8eyvYm1Dy5JZTlmxVEVOKjMkIdo42fiyi+/z53K5gwZveM5lLu51GUttrkTmFZg==",
   "success": true,
   "projectFilePath": "D:\\InternS3Corp\\Day 10 - JWT Token - WebAPI\\DemoWebAPI\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [
@@ -55,7 +55,7 @@
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\mstest.testadapter\\2.2.10\\mstest.testadapter.2.2.10.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\mstest.testframework\\2.2.10\\mstest.testframework.2.2.10.nupkg.sha512",
-    "C:\\Users\\dat.nguyent\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\dat.nguyent\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\nlog\\5.2.4\\nlog.5.2.4.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\nlog.extensions.logging\\5.3.4\\nlog.extensions.logging.5.3.4.nupkg.sha512",
     "C:\\Users\\dat.nguyent\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.4\\nlog.web.aspnetcore.5.3.4.nupkg.sha512",

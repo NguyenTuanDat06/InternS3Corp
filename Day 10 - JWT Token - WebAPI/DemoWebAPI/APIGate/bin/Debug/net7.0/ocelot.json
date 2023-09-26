@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/Employee/ListEmployee",
+      "DownstreamPathTemplate": "/Employee/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,8 +9,57 @@
           "Port": 7214
         }
       ],
-      "UpstreamPathTemplate": "/ListEmployee",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamPathTemplate": "/Employee-Gate/{everything}",
+      "UpstreamHttpMethod": [],
+      "SwaggerKey": "Employee"
+    },
+    {
+      "DownstreamPathTemplate": "/Account/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7214
+        }
+      ],
+      "UpstreamPathTemplate": "/Account-Gate/{everything}",
+      "UpstreamHttpMethod": [],
+      "SwaggerKey": "Employee"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Customer/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7024
+        }
+      ],
+      "UpstreamPathTemplate": "/Customer-Gate/{everything}",
+      "UpstreamHttpMethod": [],
+      "SwaggerKey": "Customer"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Employee",
+      "Config": [
+        {
+          "Name": "Employee API",
+          "Version": "V1",
+          "Url": "https://localhost:7214/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Customer",
+      "Config": [
+        {
+          "Name": "Customer API",
+          "Version": "V1",
+          "Url": "https://localhost:7024/swagger/v1/swagger.json"
+        }
+      ]
     }
   ]
 

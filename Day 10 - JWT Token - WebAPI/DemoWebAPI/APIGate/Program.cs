@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Configuration.AddJsonFile("ocelot.json");
 builder.Services.AddOcelot();
+builder.Services.AddSwaggerForOcelot(builder.Configuration);
 
 var app = builder.Build();
 
@@ -19,7 +20,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerForOcelotUI();
 }
 
 app.UseOcelot().Wait();
