@@ -10,5 +10,7 @@ namespace BLL.IService
         public EmployeeDto GetEmployeeId(int id);
 
         public void InsertEmployee(EmployeeRequests employee);
+
+        public Task<List<string>> GetCustomer();
     }
 }

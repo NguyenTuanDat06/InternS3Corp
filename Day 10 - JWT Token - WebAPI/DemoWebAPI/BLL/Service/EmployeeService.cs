@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using BLL.IService;
+﻿using BLL.IService;
 using BLL.Models.DTOs;
 using BLL.Models.Requests;
 using DAL.Entities;
@@ -10,13 +9,18 @@ namespace BLL.Service
     public class EmployeeService : IEmployeeService
     {
         private readonly IRepository<Employee> _repository;
+
+        private readonly HttpClient _httpClient;
         //private readonly IMapper _mapper;
 
-        public EmployeeService(IRepository<Employee> repository/* , IMapper mapper*/)
+        public EmployeeService(IRepository<Employee> repository/* , IMapper mapper*/, HttpClient httpClient)
         {
             _repository = repository;
+            _httpClient = httpClient;
             //_mapper = mapper;
         }
+
+        string localhost = "https://localhost:7024/api/";
 
         public List<EmployeeDto> ListOfEmployee()
         {
@@ -74,6 +78,15 @@ namespace BLL.Service
                 _repository.Insert(req);
                 _repository.Save();
             }
+        }
+
+        public async Task<List<string>> GetCustomer()
+        {
+            string url = localhost + "Customer/CustomerList";
+            var response = await _httpClient.GetAsync(url);
+            var content = await response.Content.ReadAsStringAsync();
+            var customerList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<string>>(content);
+            return customerList;
         }
     }
 }

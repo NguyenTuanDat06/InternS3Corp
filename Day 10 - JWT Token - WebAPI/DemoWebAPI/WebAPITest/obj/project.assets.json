@@ -1218,7 +1218,8 @@
           "DAL": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.11",
           "Microsoft.EntityFrameworkCore": "7.0.11",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11",
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
           "bin/placeholder/BLL.dll": {}
