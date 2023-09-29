@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\DemoWebAPI</_PublishTargetUrl>
+    <History>True|2023-09-29T10:13:12.4440936Z;True|2023-09-29T16:59:08.2531655+07:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConectEmployee">
+      <Value>Server=PC-DATNGUYENT%3bDatabase=DemoWebAPI%3bUser id=sa%3bpassword=Ntd.060201%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="DAL.DatabaseContext">
+      <Value>Server=PC-DATNGUYENT%3bDatabase=DemoWebAPI%3bUser id=sa%3bpassword=Ntd.060201%3bMultipleActiveResultSets=true</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

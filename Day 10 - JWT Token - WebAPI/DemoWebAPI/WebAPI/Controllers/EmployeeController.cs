@@ -29,7 +29,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("ListEmployee")]
-        [Authorize]
+        //[Authorize]
         public IEnumerable<EmployeeDto> GetListEmployee()
         {
             _logger.LogInformation("abc");

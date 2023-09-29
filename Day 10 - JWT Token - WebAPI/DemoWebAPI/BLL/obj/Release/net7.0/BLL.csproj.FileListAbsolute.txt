@@ -1,0 +1,17 @@
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\bin\Release\net7.0\BLL.deps.json
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\bin\Release\net7.0\BLL.runtimeconfig.json
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\bin\Release\net7.0\BLL.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\bin\Release\net7.0\BLL.pdb
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\bin\Release\net7.0\DAL.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\bin\Release\net7.0\DAL.pdb
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.csproj.AssemblyReference.cache
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.AssemblyInfoInputs.cache
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.AssemblyInfo.cs
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.csproj.CoreCompileInputs.cache
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.csproj.CopyComplete
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\refint\BLL.dll
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.pdb
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\BLL.genruntimeconfig.cache
+D:\InternS3Corp\Day 10 - JWT Token - WebAPI\DemoWebAPI\BLL\obj\Release\net7.0\ref\BLL.dll

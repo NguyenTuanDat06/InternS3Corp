@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\sites\WebAPI</_PublishTargetUrl>
+    <History>True|2023-09-29T10:17:41.7858781Z;True|2023-09-29T17:10:43.4193761+07:00;True|2023-09-29T17:10:02.9045921+07:00;True|2023-09-29T17:08:40.0793895+07:00;True|2023-09-29T17:06:02.1104608+07:00;False|2023-09-29T17:05:48.4306256+07:00;True|2023-09-29T16:56:46.5913759+07:00;False|2023-09-29T16:56:33.4695489+07:00;True|2023-09-29T16:46:34.7904543+07:00;True|2023-09-29T16:45:52.3313455+07:00;True|2023-09-29T16:43:58.5262411+07:00;True|2023-09-29T16:28:46.3816519+07:00;False|2023-09-29T16:28:32.6611887+07:00;True|2023-09-29T16:25:31.5938818+07:00;True|2023-09-29T16:22:16.9611541+07:00;True|2023-09-29T16:21:13.7994731+07:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConectEmployee">
+      <Value>Server=PC-DATNGUYENT%3bDatabase=DemoWebAPI%3buser id=sa%3bpassword=Ntd.060201%3bMultipleActiveResultSets=true%3bTrustServerCertificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="DAL.DatabaseContext">
+      <Value>Server=PC-DATNGUYENT%3bDatabase=DemoWebAPI%3buser id=sa%3bpassword=Ntd.060201%3bMultipleActiveResultSets=true%3bTrustServerCertificate=True</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

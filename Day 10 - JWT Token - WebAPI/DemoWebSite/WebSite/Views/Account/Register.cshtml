@@ -1,0 +1,50 @@
+﻿<form id="registerForm">
+    <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" class="form-control" id="firstname" name="FirstName" required>
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" id="lastname" name="LastName" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" name="Email" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="Password" required>
+    </div>
+    <div class="form-group">
+        <label for="comfirmpassword">ComfirmPassword:</label>
+        <input type="password" class="form-control" id="comfirmpassword" name="ComfirmPassword" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<script>
+    $("#registerForm").submit(function (e) {
+        e.preventDefault();
+
+        var obj = {
+            firstName: $("#firstname").val(),
+            lastName: $("#lastname").val(),
+            email: $("#email").val(),
+            password: $("#password").val(),
+            confirmPassword: $("#comfirmpassword").val()
+        }
+        $.ajax({
+            url: "http://localhost:8080/Account/SignUp",
+            type: "POST",
+            data: JSON.stringify(obj),
+            contentType: "application/json",
+            success: function () {
+                alert("Đăng kí thành công");
+                window.location.href="/Account/Login"
+            },
+            error: function () {
+                alert("Đăng kí thất bại , kiểm tra lại thông tin đăng kí.");
+            }
+        });
+    });
+</script>

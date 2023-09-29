@@ -1,0 +1,40 @@
+﻿
+<form id="loginForm">
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" name="Email" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="text" class="form-control" id="password" name="Password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+<script>
+    $("#loginForm").submit(function (e) {
+        e.preventDefault();
+
+        var obj = {
+            Email: $("#email").val(),
+            Password: $("#password").val()
+        }
+        $.ajax({
+            url: "http://localhost:8080/Account/SignIn",
+            type: "POST",
+            data: JSON.stringify(obj),
+            contentType: "application/json",
+            success: function (result) {
+                if (result.statusCode ===1) {
+                    alert("Đăng nhập thành công!");
+                    // window.location.href="/Home/Index"
+                    // localStorage.setItem("token", result.accessToken)
+                } else {
+                    alert("Đăng nhập thất bại. Vui lòng kiểm tra thông tin đăng nhập.");
+                }
+            },
+            error: function () {
+                alert("Đã xảy ra lỗi khi gọi API.");
+            }
+        });
+    });
+</script>
